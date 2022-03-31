@@ -14,7 +14,7 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
 
 .logo-principal {
   background-color: #262261;

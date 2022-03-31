@@ -1,6 +1,8 @@
 <template>
     <section>
-      <div class="logo-principal"></div>
+      <div class="logo-principal">
+        <img class="logo-principal-img" src="../assets/logo/logo1-pastelis.png" alt="logo-principal">
+      </div>
     </section>
 </template>
 
@@ -13,11 +15,16 @@ export default {
 
 
 <style>
+
 .logo-principal {
-    background-image: url(../assets/logo/logo1-pastelis.png);
-    background-size: cover;
-    height: 70vw;
+  background-color: #262261;
+}
+
+.logo-principal-img {
+    height: 700px;
     width: 100%;
     margin-top: 90px !important;
+    object-fit: contain;
+    /* object-fit: scale-down; */
 }
 </style>

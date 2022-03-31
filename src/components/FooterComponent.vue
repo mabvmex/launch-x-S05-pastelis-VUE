@@ -1,24 +1,20 @@
 <template>
   <div class="footter footter-fijo">
     <footer>
-      <div class="createdByInfo">
-        ® Pastelis. Todos los derechos reservados 2022. Creado por
-        <a href="https://twitter.com/mabvmex ">@mabvmex</a>
-      </div>
+        <p class="createdByInfo-rights" id="Yeardata" v-bind="year">  ® Pastelis. Todos los derechos reservados {{ year }} Creado por <a href="https://twitter.com/mabvmex ">@mabvmex</a></p>
     </footer>
   </div>
 </template>
 
 
-<script>
-
-export default {
-  name: 'FooterComponent'
-}
+<script setup>
+const d = new Date();
+let year = d.getFullYear();
 </script>
 
 
-<style>
+
+<style scoped>
 .footter {
   border-style: solid;
   border-top-width: 10px;
@@ -32,9 +28,15 @@ export default {
   width: 100%;
 }
 
-.createdByInfo {
+.createdByInfo-rights {
   padding: 20px;
   color: #316b83;
   text-align: center;
+  margin-bottom: auto !important;
 }
+
+a {
+  text-decoration-line: none;
+}
+
 </style>

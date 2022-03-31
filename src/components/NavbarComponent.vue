@@ -69,9 +69,7 @@ export default {
 };
 </script>
 
-<style>
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@500&family=Source+Code+Pro:wght@500&display=swap");
-
+<style scoped>
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -105,12 +103,17 @@ nav {
 ul {
   list-style-type: none;
   width: 100%;
+  padding: auto !important;
 }
 
 li {
   float: right;
   height: 60px;
-  font-family: "Source Code Pro";
+  margin-left: 5px;
+}
+
+a {
+  margin-top: 5px;
 }
 
 li > a {
@@ -119,8 +122,6 @@ li > a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  margin-top: 10px;
-  margin-left: 10px;
 }
 
 li a:hover:not(.nav-link .active) {
@@ -128,6 +129,7 @@ li a:hover:not(.nav-link .active) {
 }
 
 .logo {
+  margin-top: -5px;
   margin-right: 5px;
 }
 

@@ -12,6 +12,11 @@ const d = new Date();
 let year = d.getFullYear();
 </script>
 
+<script>
+export default {
+name: 'FooterComponent'
+}
+</script>
 
 
 <style scoped>

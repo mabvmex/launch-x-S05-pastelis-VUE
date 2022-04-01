@@ -2,15 +2,16 @@
   <div>
     <nav class="bg-info barra navbar navbar-dark navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar" href="/">
+        <router-link class="navbar" to="/">
           <img
+            id="navLogo"
             class="d-inline-block align-text-top logo"
             src="../assets/logo/logo3.png"
             alt="logo"
             width="160"
             height="60"
           />
-        </a>
+        </router-link>
 
         <button
           class="navbar-toggler"
@@ -27,18 +28,14 @@
           <ul class="bg-primary navbar-nav me-auto mb-0 mb-lg-0">
             <li class="nav-item actived">
               <a
+                href="/#menu"
                 class="nav-link active"
                 aria-current="page"
-                href="./pastelis.html#menu"
                 >Menú</a
               >
             </li>
             <li class="nav-item actived">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="./ordena.html"
-                >Compra</a
+              <router-link to="/ordena" class="nav-link active" aria-current="page">Ordena</router-link
               >
             </li>
             <li class="nav-item actived">
@@ -52,8 +49,8 @@
               >
             </li>
             <li class="nav-item actived">
-              <a class="nav-link active" aria-current="page" href="./admin.html"
-                >ADMIN</a
+              <router-link class="nav-link active" aria-current="page" to="./admin"
+                >ADMIN</router-link
               >
             </li>
           </ul>

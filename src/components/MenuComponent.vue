@@ -38,17 +38,17 @@ export default {
       {
         id: 'chocolate', url: require('@/assets/pastel/chocolate.jpeg'),
         name: 'chocolate',
-        price: '250.00'
+        price: '350.00'
       },
       {
         id: 'color-turquesa', url: require('@/assets/pastel/color-turquesa.jpeg'),
         name: 'color-turquesa',
-        price: '250.00'
+        price: '220.00'
       },
       {
         id: 'colorido', url: require('@/assets/pastel/colorido.jpeg'),
         name: 'colorido',
-        price: '250.00'
+        price: '300.00'
       },
       {
         id: 'combinado', url: require('@/assets/pastel/combinado.jpeg'),
@@ -58,22 +58,22 @@ export default {
       {
         id: 'crebanadas', url: require('@/assets/pastel/crebanadas.jpeg'),
         name: 'crebanadas',
-        price: '250.00'
+        price: '50.00'
       },
       {
         id: 'doble-chocolate', url: require('@/assets/pastel/doble-chocolate.jpeg'),
         name: 'doble-chocolate',
-        price: '250.00'
+        price: '225.00'
       },
       {
         id: 'elegante', url: require('@/assets/pastel/elegante.jpeg'),
         name: 'elegante',
-        price: '250.00'
+        price: '300.00'
       },
       {
         id: 'fresas', url: require('@/assets/pastel/fresas.jpeg'),
         name: 'fresas',
-        price: '250.00'
+        price: '350.00'
       },
       {
         id: 'frutas', url: require('@/assets/pastel/frutas.jpeg'),
@@ -83,27 +83,27 @@ export default {
       {
         id: 'limon', url: require('@/assets/pastel/limon.jpeg'),
         name: 'limon',
-        price: '250.00'
+        price: '200.00'
       },
       {
         id: 'mario-1', url: require('@/assets/pastel/mario-1.png'),
         name: 'mario-1',
-        price: '250.00'
+        price: '320.00'
       },
       {
         id: 'mario-2', url: require('@/assets/pastel/mario-2.jpeg'),
         name: 'mario-2',
-        price: '250.00'
+        price: '380.00'
       },
       {
         id: 'cupcakes-happy', url: require('@/assets/pastel/cupcakes-happy.jpeg'),
         name: 'cupcakes-happy',
-        price: '250.00'
+        price: '50.00'
       },
       {
         id: 'cupcakes', url: require('@/assets/pastel/cupcakes.jpeg'),
         name: 'chocoCupcakes',
-        price: '250.00'
+        price: '50.00'
       }
     ])
     return { pasteles }
@@ -123,13 +123,6 @@ h2 {
   text-align: center;
   font-size: 44px;
   color: #1bab61;
-}
-
-h3 {
-  text-align: center;
-  margin-bottom: 60px;
-  color: #1bab61;
-  font-size: 44px;
 }
 
 .info img {

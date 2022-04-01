@@ -55,7 +55,7 @@
 
 <script>
 export default {
-  name: 'AboutUsComponent'
+  name: 'AboutComponent'
 }
 </script>
 

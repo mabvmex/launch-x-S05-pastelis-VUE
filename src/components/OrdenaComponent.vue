@@ -48,7 +48,9 @@ h2 {
 }
 
 .pedidos-label {
-    width: 450px;
+    width: 200px;
+    text-align: left;
+    left: 50px
 }
 
 .form-control {

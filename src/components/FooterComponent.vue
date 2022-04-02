@@ -1,7 +1,7 @@
 <template>
   <div class="footter footter-fijo">
     <footer>
-        <p class="createdByInfo-rights" id="Yeardata" v-bind="year">  ® Pastelis. Todos los derechos reservados {{ year }} Creado por <a href="https://twitter.com/mabvmex ">@mabvmex</a></p>
+        <p class="createdByInfo-rights" id="Yeardata" v-bind="year">  ® Pastelis. Todos los derechos reservados {{ year }}. Con <i class="fas fa-heart"></i> y <i class="fab fa-vuejs"></i> por <a href="https://twitter.com/mabvmex ">@mabvmex</a></p>
     </footer>
   </div>
 </template>
@@ -40,8 +40,18 @@ name: 'FooterComponent'
   margin-bottom: auto !important;
 }
 
+.createdByInfo-rights > .fa-heart:hover {
+  color: red
+}
+
+.createdByInfo-rights > .fa-vuejs:hover {
+  color: #42b883;
+  font-size: 30px;
+}
+
 a {
   text-decoration-line: none;
 }
+
 
 </style>

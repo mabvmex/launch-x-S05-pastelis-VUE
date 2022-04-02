@@ -31,28 +31,21 @@
                 href="/#menu"
                 class="nav-link active"
                 aria-current="page"
-                >Menú</a
-              >
+                >Menú</a>
             </li>
             <li class="nav-item actived">
-              <router-link to="/ordena" class="nav-link active" aria-current="page">Ordena</router-link
-              >
+              <router-link to="/ordena" class="nav-link active" aria-current="page">Ordena</router-link>
             </li>
             <li class="nav-item actived">
-              <a class="nav-link active" aria-current="page" href="#contacto"
-                >Contáctanos</a
-              >
+              <a class="nav-link active" aria-current="page" href="/#contacto">Contáctanos</a>
             </li>
             <li class="nav-item actived">
-              <a class="nav-link active" aria-current="page" href="#nosotros"
-                >Nosotros</a
-              >
+              <a class="nav-link active" aria-current="page" href="/#nosotros">Nosotros</a>
             </li>
             <li class="nav-item actived">
-              <router-link class="nav-link active" aria-current="page" to="./admin"
-                >ADMIN</router-link
-              >
+              <router-link class="nav-link active" aria-current="page" to="/admin">ADMIN</router-link>
             </li>
+            
           </ul>
         </div>
       </div>

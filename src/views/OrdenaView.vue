@@ -10,8 +10,8 @@
 
 <script>
 import NavbarComponent from "@/components/NavbarComponent";
-import OrdenaComponent from "@/components/OrdenaComponent";
-import OrdenaPersonalizadoComponent from "@/components/OrdenaPersonalizadoComponent";
+import OrdenaComponent from "@/components/ordena/OrdenaComponent";
+import OrdenaPersonalizadoComponent from "@/components/ordena/OrdenaPersonalizadoComponent";
 import AboutComponent from "@/components/AboutComponent";
 import FooterComponent from "@/components/FooterComponent";
 

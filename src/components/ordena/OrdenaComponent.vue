@@ -3,7 +3,7 @@
         <div class="titulo-ordena">
         <h2> Haz tu pedido</h2>
         </div>
-            <div>
+            <form>
                 <label class="pedidos-label" for="nombre"><i class="fas fa-id-card"></i> Ingresa tu nombre</label>
                 <input class="form-control pedidos-input" type="text" name="nombre" placeholder="Nombre" required> <br>
 
@@ -15,7 +15,7 @@
 
                 <label class="pedidos-label" for="correo"><i class="fas fa-envelope"></i> Ingresa tu correo</label>
                 <input class="form-control pedidos-input" type="email" name="correo" placeholder="email" required><br>
-            </div>
+            </form>
     </section>
 </template>
 

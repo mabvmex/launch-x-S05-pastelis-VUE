@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import NavbarComponent from '@/components/NavbarComponent'
+import NavbarComponent from '@/components/shared/NavbarComponent'
 import AdminComponent from "@/components/AdminComponent";
-import AboutComponent from "@/components/AboutComponent";
-import FooterComponent from "@/components/FooterComponent";
+import AboutComponent from "@/components/shared/AboutComponent";
+import FooterComponent from "@/components/shared/FooterComponent";
 
 
 export default ({

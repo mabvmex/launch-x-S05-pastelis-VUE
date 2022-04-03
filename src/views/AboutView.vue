@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import NavbarComponent from '@/components/NavbarComponent.vue'
+import NavbarComponent from '@/components/shared/NavbarComponent.vue'
 
 export default({
  name: 'AboutView',

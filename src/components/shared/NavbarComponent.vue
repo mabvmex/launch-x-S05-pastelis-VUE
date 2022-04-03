@@ -6,7 +6,7 @@
           <img
             id="navLogo"
             class="d-inline-block align-text-top logo"
-            src="../assets/logo/logo3.png"
+            src="@/assets/logo/logo3.png"
             alt="logo"
             width="160"
             height="60"

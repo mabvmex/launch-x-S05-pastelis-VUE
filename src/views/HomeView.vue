@@ -10,11 +10,11 @@
 
 <script>
 // @ is an alias to /src
-import NavbarComponent from '@/components/NavbarComponent'
+import NavbarComponent from '@/components/shared/NavbarComponent'
 import LogoSectionComponent from '@/components/LogoSectionComponent'
 import MenuComponent from "@/components/MenuComponent";
-import FooterComponent from "@/components/FooterComponent";
-import AboutComponent from "@/components/AboutComponent.vue";
+import FooterComponent from "@/components/shared/FooterComponent";
+import AboutComponent from "@/components/shared/AboutComponent";
 
 export default {
   name: 'HomeView',

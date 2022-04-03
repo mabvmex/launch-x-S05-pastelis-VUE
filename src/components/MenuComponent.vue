@@ -61,8 +61,8 @@ export default {
         price: '50.00'
       },
       {
-        id: 'doble-chocolate', url: require('@/assets/pastel/doble-chocolate.jpeg'),
-        name: 'doble-chocolate',
+        id: 'chocoDoble', url: require('@/assets/pastel/doble-chocolate.jpeg'),
+        name: 'chocoDoble',
         price: '225.00'
       },
       {
@@ -115,7 +115,7 @@ export default {
 .titulo-menu {
   padding: 20px;
   margin-top: 10px;
-  border-bottom: #316b83 solid 3px;
+  border-bottom: #262262 solid 3px;
   margin-bottom: 100px;
 }
 

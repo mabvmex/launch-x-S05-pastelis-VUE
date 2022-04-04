@@ -29,7 +29,7 @@
             <li class="nav-item actived">
               <a
                 href="/#menu"
-                class="nav-link active"
+                class="nav-link active menu"
                 aria-current="page"
                 >Menú</a>
             </li>
@@ -91,15 +91,16 @@ nav {
 }
 
 ul {
-  list-style-type: none;
   width: 100%;
   padding: auto !important;
+  list-style-type: none;
 }
 
 li {
   float: right;
   height: 60px;
-  /* margin: 5px; */
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 a {

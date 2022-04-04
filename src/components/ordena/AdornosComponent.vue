@@ -1,11 +1,11 @@
 <template>
-  <div class="card adornos">
+  <div class="card adornos col-md-4 col-sm-3 col-xs-2">
     <div class="card-header">
       <h3>¿Deseas adornos adicionales?</h3>
     </div>
     <div class="grid-container">
       <div
-        class="grid-item"
+        class="grid-item col-md-8 col-sm-6 col-xs-9"
         v-for="adorno in adornos"
         :key="adorno.id"
         :alt="adorno.name"
@@ -83,6 +83,11 @@ export default {
 </script>
 
 <style scoped>
+
+.card {
+  margin: 20px;
+}
+
 .adornos {
   margin-top: 50px;
   margin-right: 20px;
@@ -118,4 +123,119 @@ h3 {
   text-align: center;
   color: #1bab61;
 }
+
+
+
+/*=============================================
+PANTALLA DE ESCRITORIO MEDIANO - MEDIUM (md) - revisamos en tablet horizontal 1024px
+=============================================*/
+
+@media(max-width:1199px) and (min-width:992px){
+
+	.col-md-12{width:100%;}
+	.col-md-11{width:91.66666667%;}
+	.col-md-10{width:83.33333333%;}
+	.col-md-9{width:75%;}
+	.col-md-8{width:66.66666667%;}
+	.col-md-7{width:58.33333333%;}
+	.col-md-6{width:50%;}
+	.col-md-5{width:41.66666667%;}
+	.col-md-4{width: 33.33333333%;}
+	.col-md-3{width: 25%;}
+	.col-md-2{width: 16.66666667%;}
+	.col-md-1{width: 8.33333333%;}
+
+.adornos {
+  width: 350px;
+  height: 1450px;
+}
+
+.grid-container {
+  grid-template-columns: auto auto;
+  }
+
+.grid-item {
+  width: 130px;
+  }
+
+.grid-container .grid-item {
+  margin: auto;
+  }
+}
+
+/*=============================================
+PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical 768px
+=============================================*/
+
+@media(max-width:991px) and (min-width:768px){
+
+	.col-sm-12{width:100%;}
+	.col-sm-11{width:91.66666667%;}
+	.col-sm-10{width:83.33333333%;}
+	.col-sm-9{width:75%;}
+	.col-sm-8{width:66.66666667%;}
+	.col-sm-7{width:58.33333333%;}
+	.col-sm-6{width:50%;}
+	.col-sm-5{width:41.66666667%;}
+	.col-sm-4{width: 33.33333333%;}
+	.col-sm-3{width: 25%;}
+	.col-sm-2{width: 16.66666667%;}
+	.col-sm-1{width: 8.33333333%;}
+
+.adornos {
+  width: 350px;
+  height: 1450px;
+}
+
+.grid-container {
+  grid-template-columns: auto auto;
+  }
+
+.grid-item {
+  width: 130px;
+  }
+
+.grid-container .grid-item {
+  margin: auto;
+  }
+}
+
+/*=============================================
+PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o vertical 320px
+=============================================*/
+
+@media(max-width:767px){
+
+	.col-xs-12{width:100%;}
+	.col-xs-11{width:91.66666667%;}
+	.col-xs-10{width:83.33333333%;}
+	.col-xs-9{width:75%;}
+	.col-xs-8{width:66.66666667%;}
+	.col-xs-7{width:58.33333333%;}
+	.col-xs-6{width:50%;}
+	.col-xs-5{width:41.66666667%;}
+	.col-xs-4{width: 33.33333333%;}
+	.col-xs-3{width: 25%;}
+	.col-xs-2{width: 16.66666667%;}
+	.col-xs-1{width: 8.33333333%;}
+
+
+.adornos {
+  width: 350px;
+  height: 1450px;
+}
+
+.grid-container {
+  grid-template-columns: auto auto;
+  }
+
+.grid-item {
+  width: 130px;
+  }
+
+.grid-container .grid-item {
+  margin: auto;
+  }
+}
+
 </style>

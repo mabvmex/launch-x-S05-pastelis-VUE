@@ -7,7 +7,7 @@
       <AdornosComponent />
     </div>
     <div>
-      <input  href="#" class="btn btn-primary" type="submit" value='Ordenar'>
+      <input href="#" class="btn btn-primary" type="submit" value="Ordenar" />
     </div>
     <AboutComponent />
     <FooterComponent />
@@ -38,7 +38,36 @@ export default {
 
 .btn {
   margin-top: 50px;
-  width: 200px;
+  width: 150px;
+}
+
+@media (max-width: 767px) {
+  .col-xs-12 { width: 100%; }
+  .col-xs-11 { width: 91.66666667%; }
+  .col-xs-10 { width: 83.33333333%; }
+  .col-xs-9 { width: 75%; }
+  .col-xs-8 { width: 66.66666667%; }
+  .col-xs-7 { width: 58.33333333%; }
+  .col-xs-6 { width: 50%; }
+  .col-xs-5 { width: 41.66666667%; }
+  .col-xs-4 { width: 33.33333333%; }
+  .col-xs-3 { width: 25%; }
+  .col-xs-2 { width: 16.66666667%; }
+  .col-xs-1 { width: 8.33333333%; }
+
+  .opciones {
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  .opciones > div {
+    width: 450px;
+    margin: auto;
+  }
+
+  .adornos {
+    height: 1100px;
+  }
 }
 </style>
 

@@ -1,10 +1,10 @@
 <template>
   <div class="pedidos">
     <div class="table-pedidos">
+      <div class="card-header">
+        <h3>Pedidos</h3>
+      </div>
       <table class="table">
-        <div class="card-header">
-          <h3>Pedidos</h3>
-        </div>
         <thead>
           <tr>
             <th scope="col ">#</th>
@@ -13,16 +13,23 @@
             <th scope="col ">email</th>
             <th scope="col ">Sabor</th>
             <th scope="col ">Adorno</th>
+            <th scope="col ">Total</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody
+          v-for="pedido in pedidos"
+          :key="pedido.id"
+          :alt="pedido.name"
+          :index="pedido.index"
+        >
           <tr>
-            <th scope="row ">1</th>
-            <td>Fernando</td>
-            <td>5511223344</td>
-            <td>fherrera007@gmail.com</td>
-            <td>5511223344</td>
-            <td>Combinado</td>
+            <th scope="row ">{{ pedido.index + 1 }}</th>
+            <td>{{ pedido.name }}</td>
+            <td>{{ pedido.telefono }}</td>
+            <td>{{ pedido.correo }}</td>
+            <td>sabor</td>
+            <td>adorno</td>
+            <td>total</td>
           </tr>
         </tbody>
       </table>
@@ -31,8 +38,51 @@
 </template>
 
 <script>
+import { ref } from 'vue';
 export default {
-  name: 'AdminPedidosComponent'
+  name: 'AdminPedidosComponent',
+
+  setup() {
+    const pedidos = ref([
+      {
+        id: '001',
+        index: 0,
+        name: 'Mónica Herrera',
+        telefono: '55 1100 3300',
+        correo: 'nix@gmail.',
+      },
+      {
+        id: '002',
+        index: 1,
+        name: 'Javier Gónzales',
+        telefono: '55 1135 3301',
+        correo: 'jgonz@hotmail.com',
+      },
+      {
+        id: '003',
+        index: 2,
+        name: 'Natalia Fernandez',
+        telefono: '55 1146 3302',
+        correo: 'nfer23@gmail.',
+      },
+      {
+        id: '004',
+        index: 3,
+        name: 'Ricardo Pérez',
+        telefono: '55 1154 3303',
+        correo: 'riper@yahoo.com',
+      },
+      {
+        id: '005',
+        index: 4,
+        name: 'Daniel Salazar',
+        telefono: '55 1186 3304',
+        correo: 'danSal5@gmail.com',
+        disponible: '10',
+      },
+    ])
+    return { pedidos }
+  }
 }
 </script>
 

@@ -1,18 +1,21 @@
 <template>
-  <div class="sabores">
-    <h3>Elige el sabor</h3>
-    <div class="grid-container">
-      <div
+  <div class="card sabores">
+    <div class="card-header">
+      <h3>Elige el sabor</h3>
+    </div>
+    <div class="card-body grid-container">    <div
         class="grid-item"
-        v-for="pastel in pasteles"
-        :key="pastel.id"
-        :src="pastel.url"
-        :alt="pastel.name"
-        :price="pastel.price"
+        v-for="sabor in sabores"
+        :key="sabor.id"
+        :src="sabor.url"
+        :alt="sabor.name"
+        :price="sabor.price"
       >
-        <img :src="pastel.url" :alt="pastel.name" class="banner" />
-        <p>{{ pastel.name }}</p>
-        <p>${{ pastel.price }}</p>
+        <a :href="'#' + sabor.name">
+          <img :src="sabor.url" :alt="sabor.name" class="banner" />
+        </a>
+        <p class="card-title">{{ sabor.name }}</p>
+        <p class="card-text">${{ sabor.price }}</p>
         <input type="checkbox" />
       </div>
     </div>
@@ -25,7 +28,7 @@ export default {
   name: 'SaboresComponent',
 
   setup() {
-    const pasteles = ref([
+    const sabores = ref([
       {
         id: 'chocolate', url: require('@/assets/pastel/chocolate.jpeg'),
         name: 'chocolate',
@@ -97,7 +100,7 @@ export default {
         price: '50.00'
       }
     ])
-    return { pasteles }
+    return { sabores }
   }
 }
 </script>
@@ -106,16 +109,20 @@ export default {
 <style scoped>
 .sabores {
   margin-top: 50px;
-  width: 50vw;
+  margin-right: 20px;
+  width: 580px;
+  border: 3px solid #316b83;
+}
+
+.card-header {
+  border-bottom: 3px solid #316b83;
+  background-color: #262261;
 }
 
 .grid-container {
   display: grid;
-  /* width: 250px !important; */
-  width: 50vw;
-  margin-top: 20px;
-  margin-left: 50px;
-  grid-template-columns: auto auto auto auto;
+  margin: 20px;
+  grid-template-columns: auto auto auto;
   column-gap: 10px;
   row-gap: 10px;
 }
@@ -126,19 +133,19 @@ export default {
   margin: 5px;
   padding: 20px !important;
   align-items: center;
-  border: 3px solid #000;
+  border: 3px solid #262261;
   border-radius: 5px;
 }
 
+h3 {
+  margin: auto;
+  text-align: center;
+  color: #1bab61;
+}
 .banner {
   margin: -25px auto auto -20px;
   height: 41px;
   width: 144px;
   object-fit: cover;
-}
-
-h3 {
-  text-align: center;
-  color: #262261;
 }
 </style>

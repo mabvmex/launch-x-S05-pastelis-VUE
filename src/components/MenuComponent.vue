@@ -14,7 +14,7 @@
           :alt="pastel.name"
           :price="pastel.price"
         >
-          <a href="#chocolate">
+          <a :href="'#'+pastel.name">
             <img :src="pastel.url" :alt="pastel.name" :price="pastel.price" />
             <div class="card-body">
               <p class="card-text"> Pastel: {{pastel.name}} </p>

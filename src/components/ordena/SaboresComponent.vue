@@ -148,6 +148,7 @@ h3 {
   text-align: center;
   color: #1bab61;
 }
+
 .banner {
   margin: -25px auto auto -20px;
   height: 41px;

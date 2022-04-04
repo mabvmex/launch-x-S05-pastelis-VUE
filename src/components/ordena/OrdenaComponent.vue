@@ -32,6 +32,7 @@ export default {
   padding: 20px;
   margin-top: 41px;
   border-bottom: #316b83 solid 3px;
+  margin-top: 100px;
   margin-bottom: 100px;
 }
 
